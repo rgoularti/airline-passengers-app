@@ -6,13 +6,14 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
+    "test-headless": "ng test --watch=false --browsers=ChromeHeadless",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
   "private": true,
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --staged && ng lint && ng test --watch=false",
+      "pre-commit": "pretty-quick --staged && npm run lint && npm run test-headless",
       "pre-push": "ng build --aot true"
     }
   },
