@@ -1,5 +1,4 @@
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/rgoularti/airline-passengers-app)
-
 [![CircleCI](https://circleci.com/gh/rgoularti/airline-passengers-app/tree/master.svg?style=svg)](https://circleci.com/gh/rgoularti/airline-passengers-app/tree/master)
 
 # AngularFundamentals
