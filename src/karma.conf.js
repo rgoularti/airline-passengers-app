@@ -15,6 +15,13 @@ module.exports = function(config) {
     client: {
       clearContext: false, // leave Jasmine Spec Runner output visible in browser
     },
+    browsers: env.BROWSER ? env.BROWSER.split(',') : ['Chrome'],
+    customLaunchers: {
+      Chrome_Without_Sandbox: {
+        base: 'Chrome',
+        flags: ['--no-sandbox', '--disable-setuid-sandbox'],
+      },
+    },
     coverageIstanbulReporter: {
       dir: require('path').join(
         __dirname,
